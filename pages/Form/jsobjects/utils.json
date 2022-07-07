@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "utils",
+    "pageId": "Form",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\taddNewSkill: () => {\n\t\tif((Input1.text) && (catSkillSelect.selectedOptionValue) && (typeSkillSelect.selectedOptionValue)){ //เช็คว่าทุกช่องต้องมีข้อมูล\n\n\t\t\tinsertSkill.run(\n\t\t\t\t() => showAlert('เพิ่มสำเร็จ'), // กรณีสำเร็จ\n\t\t\t\t() => showAlert('เพิ่มไม่สำเร็จ','error') //มีรูปแบบของการแสดงผล showAlert() 4 แบบ คือ info, success, error, warning\n\t\t\t)\n\t\t}else{\n\t\t\tshowAlert('โปรดระบุข้อมูลให้ครบถ้วน');\n\t\t}\n\t},\n\taddNewSkill2: () => {\n\t\tif((Input1.text) && (catSkillSelect.selectedOptionValue) && (typeSkillSelect.selectedOptionValue)){ //เช็คว่าทุกช่องต้องมีข้อมูล\n\n\t\t\tinsertSkill.run(\n\t\t\t\t() => showAlert('เพิ่มสำเร็จ'), // กรณีสำเร็จ\n\t\t\t\t() => showAlert(insertSkill.data.message, 'error') //มีรูปแบบของการแสดงผล showAlert() 4 แบบ คือ info, success, error, warning ใส่เพิ่มหรือไม่เพิ่มก็ได้\n\t\t\t)\n\t\t}else{\n\t\t\tshowAlert('โปรดระบุข้อมูลให้ครบถ้วน');\n\t\t}\n\t}\n}",
+    "variables": []
+  },
+  "id": "Form_utils",
+  "deleted": false,
+  "gitSyncId": "62bf32d5612750023eb04eae_62c3c2e878f4ff24c7302d34"
+}

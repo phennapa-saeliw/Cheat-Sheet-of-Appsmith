@@ -1,0 +1,676 @@
+{
+  "unpublishedPage": {
+    "name": "Server Side Pagination",
+    "slug": "server-side-pagination",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 770,
+          "containerStyle": "none",
+          "snapRows": 77,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 59,
+          "minHeight": 780,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "isVisibleDownload": true,
+              "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
+              "topRow": 14,
+              "isSortable": true,
+              "onPageChange": "{{getSales.run()}}",
+              "type": "TABLE_WIDGET",
+              "animateLoading": true,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "childStylesheet.button.buttonColor"
+                },
+                {
+                  "key": "childStylesheet.button.borderRadius"
+                },
+                {
+                  "key": "childStylesheet.menuButton.menuColor"
+                },
+                {
+                  "key": "childStylesheet.menuButton.borderRadius"
+                },
+                {
+                  "key": "childStylesheet.iconButton.buttonColor"
+                },
+                {
+                  "key": "childStylesheet.iconButton.borderRadius"
+                },
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.Row_ID.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Order_ID.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Order_Date.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Ship_Date.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Ship_Mode.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Customer_ID.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Customer_Name.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Segment.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Country.computedValue"
+                },
+                {
+                  "key": "primaryColumns.City.computedValue"
+                },
+                {
+                  "key": "primaryColumns.State.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Postal_Code.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Region.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Product_ID.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Category.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Sub_Category.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Product_Name.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Sales.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Quantity.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Discount.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Profit.computedValue"
+                },
+                {
+                  "key": "primaryColumns.rowIndex.computedValue"
+                }
+              ],
+              "leftColumn": 1,
+              "delimiter": ",",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisibleFilters": true,
+              "isVisible": true,
+              "enableClientSideSearch": true,
+              "version": 3,
+              "totalRecordsCount": "9994",
+              "isLoading": false,
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "menuButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "iconButton": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                }
+              },
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "columnSizeMap": {
+                "task": 245,
+                "step": 62,
+                "status": 75
+              },
+              "widgetName": "Table1",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "Row_ID",
+                "Order_ID",
+                "Order_Date",
+                "Ship_Date",
+                "Ship_Mode",
+                "Customer_ID",
+                "Customer_Name",
+                "Segment",
+                "Country",
+                "City",
+                "State",
+                "Postal_Code",
+                "Region",
+                "Product_ID",
+                "Category",
+                "Sub_Category",
+                "Product_Name",
+                "Sales",
+                "Quantity",
+                "Discount",
+                "Profit",
+                "rowIndex"
+              ],
+              "dynamicPropertyPathList": [],
+              "displayName": "Table",
+              "searchTags": [
+                "datagrid"
+              ],
+              "bottomRow": 62,
+              "parentRowSpace": 10,
+              "defaultSelectedRow": "0",
+              "hideCard": false,
+              "parentColumnSpace": 16.3125,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onPageChange"
+                }
+              ],
+              "primaryColumns": {
+                "Row_ID": {
+                  "index": 0,
+                  "width": 150,
+                  "id": "Row_ID",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Row_ID",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Row_ID))}}"
+                },
+                "Order_ID": {
+                  "index": 1,
+                  "width": 150,
+                  "id": "Order_ID",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Order_ID",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Order_ID))}}"
+                },
+                "Order_Date": {
+                  "index": 2,
+                  "width": 150,
+                  "id": "Order_Date",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Order_Date",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Order_Date))}}"
+                },
+                "Ship_Date": {
+                  "index": 3,
+                  "width": 150,
+                  "id": "Ship_Date",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Ship_Date",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Ship_Date))}}"
+                },
+                "Ship_Mode": {
+                  "index": 4,
+                  "width": 150,
+                  "id": "Ship_Mode",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Ship_Mode",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Ship_Mode))}}"
+                },
+                "Customer_ID": {
+                  "index": 5,
+                  "width": 150,
+                  "id": "Customer_ID",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Customer_ID",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Customer_ID))}}"
+                },
+                "Customer_Name": {
+                  "index": 6,
+                  "width": 150,
+                  "id": "Customer_Name",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Customer_Name",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Customer_Name))}}"
+                },
+                "Segment": {
+                  "index": 7,
+                  "width": 150,
+                  "id": "Segment",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Segment",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Segment))}}"
+                },
+                "Country": {
+                  "index": 8,
+                  "width": 150,
+                  "id": "Country",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Country",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Country))}}"
+                },
+                "City": {
+                  "index": 9,
+                  "width": 150,
+                  "id": "City",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "City",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.City))}}"
+                },
+                "State": {
+                  "index": 10,
+                  "width": 150,
+                  "id": "State",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "State",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.State))}}"
+                },
+                "Postal_Code": {
+                  "index": 11,
+                  "width": 150,
+                  "id": "Postal_Code",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Postal_Code",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Postal_Code))}}"
+                },
+                "Region": {
+                  "index": 12,
+                  "width": 150,
+                  "id": "Region",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Region",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Region))}}"
+                },
+                "Product_ID": {
+                  "index": 13,
+                  "width": 150,
+                  "id": "Product_ID",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Product_ID",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Product_ID))}}"
+                },
+                "Category": {
+                  "index": 14,
+                  "width": 150,
+                  "id": "Category",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Category",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Category))}}"
+                },
+                "Sub_Category": {
+                  "index": 15,
+                  "width": 150,
+                  "id": "Sub_Category",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Sub_Category",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Sub_Category))}}"
+                },
+                "Product_Name": {
+                  "index": 16,
+                  "width": 150,
+                  "id": "Product_Name",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Product_Name",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Product_Name))}}"
+                },
+                "Sales": {
+                  "index": 17,
+                  "width": 150,
+                  "id": "Sales",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Sales",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Sales))}}"
+                },
+                "Quantity": {
+                  "index": 18,
+                  "width": 150,
+                  "id": "Quantity",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Quantity",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Quantity))}}"
+                },
+                "Discount": {
+                  "index": 19,
+                  "width": 150,
+                  "id": "Discount",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Discount",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Discount))}}"
+                },
+                "Profit": {
+                  "index": 20,
+                  "width": 150,
+                  "id": "Profit",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Profit",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Profit))}}"
+                },
+                "rowIndex": {
+                  "index": 21,
+                  "width": 150,
+                  "id": "rowIndex",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "rowIndex",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.rowIndex))}}"
+                }
+              },
+              "key": "k80do20lm4",
+              "derivedColumns": {},
+              "isDeprecated": false,
+              "rightColumn": 63,
+              "textSize": "0.875rem",
+              "widgetId": "u4i2jwzy7g",
+              "tableData": "{{getSales.data}}",
+              "label": "Data",
+              "searchKey": "",
+              "parentId": "0",
+              "serverSidePaginationEnabled": true,
+              "renderMode": "CANVAS",
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": true,
+              "isVisiblePagination": true,
+              "verticalAlignment": "CENTER"
+            },
+            {
+              "widgetName": "Text1",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+              "searchTags": [
+                "typography",
+                "paragraph"
+              ],
+              "topRow": 1,
+              "bottomRow": 11,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "overflow": "NONE",
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 16.3125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 1,
+              "dynamicBindingPathList": [
+                {
+                  "key": "fontFamily"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "shouldTruncate": false,
+              "truncateButtonColor": "#FFC13D",
+              "text": "ขั้นตอน\n1. ให้แก้ไข Properties ของ Table โดย enable Server side pagination และใส่ค่า Total records โดยใช้การ get API ก็ได้\n2. ให้เพิ่ม event ของ Table ตรง onPageChange ให้เรียก API ตัวเดียวกันกับที่ดึงข้อมูลมาใส่ในตาราง",
+              "key": "rens1mgk0e",
+              "isDeprecated": false,
+              "rightColumn": 63,
+              "textAlign": "LEFT",
+              "widgetId": "ru6a6wejko",
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "fontSize": "1rem"
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Server Side Pagination_getSales",
+              "name": "getSales",
+              "confirmBeforeExecute": false,
+              "pluginType": "SAAS",
+              "jsonPathKeys": [
+                "(Table1.pageNo - 1) * Table1.pageSize",
+                "Table1.pageSize"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "validOnPageLoadActions": true,
+        "id": "Server Side Pagination",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "62bf32d5612750023eb04eae_62c3c37678f4ff24c7302d61"
+}

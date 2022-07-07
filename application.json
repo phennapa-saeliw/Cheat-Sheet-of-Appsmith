@@ -5,6 +5,22 @@
       "isDefault": true
     },
     {
+      "id": "Menu",
+      "isDefault": false
+    },
+    {
+      "id": "Table Widget",
+      "isDefault": false
+    },
+    {
+      "id": "Form",
+      "isDefault": false
+    },
+    {
+      "id": "Server Side Pagination",
+      "isDefault": false
+    },
+    {
       "id": "Page1",
       "isDefault": false
     }
@@ -14,6 +30,12 @@
   "unreadCommentThreads": 0,
   "color": "#CCCCCC",
   "icon": "headphones",
+  "unpublishedAppLayout": {
+    "type": "DESKTOP"
+  },
+  "publishedAppLayout": {
+    "type": "DESKTOP"
+  },
   "evaluationVersion": 2,
   "applicationVersion": 2,
   "isManualUpdate": false,
