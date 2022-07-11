@@ -17,11 +17,11 @@
       "isDefault": false
     },
     {
-      "id": "Server Side Pagination",
+      "id": "Server Side Pagination GSheet",
       "isDefault": false
     },
     {
-      "id": "Page1",
+      "id": "Test",
       "isDefault": false
     }
   ],
@@ -31,10 +31,10 @@
   "color": "#CCCCCC",
   "icon": "headphones",
   "unpublishedAppLayout": {
-    "type": "DESKTOP"
+    "type": "FLUID"
   },
   "publishedAppLayout": {
-    "type": "DESKTOP"
+    "type": "FLUID"
   },
   "evaluationVersion": 2,
   "applicationVersion": 2,
