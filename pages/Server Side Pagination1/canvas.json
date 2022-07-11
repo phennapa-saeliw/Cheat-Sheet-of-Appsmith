@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Server Side Pagination GSheet",
-    "slug": "server-side-pagination-gsheet",
+    "name": "Server Side Pagination1",
+    "slug": "server-side-pagination1",
     "layouts": [
       {
         "viewMode": false,
@@ -29,7 +29,7 @@
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
               "isVisibleDownload": true,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 14,
+              "topRow": 15,
               "isSortable": true,
               "onPageChange": "{{getSales.run()}}",
               "type": "TABLE_WIDGET",
@@ -195,7 +195,7 @@
               "searchTags": [
                 "datagrid"
               ],
-              "bottomRow": 62,
+              "bottomRow": 63,
               "parentRowSpace": 10,
               "defaultSelectedRow": "0",
               "hideCard": false,
@@ -606,8 +606,8 @@
                 "typography",
                 "paragraph"
               ],
-              "topRow": 1,
-              "bottomRow": 11,
+              "topRow": 5,
+              "bottomRow": 15,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -642,13 +642,59 @@
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "fontSize": "1rem"
+            },
+            {
+              "widgetName": "Text2",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+              "searchTags": [
+                "typography",
+                "paragraph"
+              ],
+              "topRow": 0,
+              "bottomRow": 4,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "overflow": "NONE",
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 16.3125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 1,
+              "dynamicBindingPathList": [
+                {
+                  "key": "fontFamily"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "shouldTruncate": false,
+              "truncateButtonColor": "#FFC13D",
+              "text": "Server Side Pagination for Google Sheet",
+              "key": "mkxv9ecsup",
+              "isDeprecated": false,
+              "rightColumn": 63,
+              "backgroundColor": "#93c5fd",
+              "textAlign": "CENTER",
+              "widgetId": "hhcsixc8si",
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "fontSize": "1rem"
             }
           ]
         },
         "layoutOnLoadActions": [
           [
             {
-              "id": "Server Side Pagination GSheet_getSales",
+              "id": "Server Side Pagination1_getSales",
               "name": "getSales",
               "confirmBeforeExecute": false,
               "pluginType": "SAAS",
@@ -661,7 +707,7 @@
           ]
         ],
         "validOnPageLoadActions": true,
-        "id": "Server Side Pagination GSheet",
+        "id": "Server Side Pagination1",
         "deleted": false,
         "policies": [],
         "userPermissions": []

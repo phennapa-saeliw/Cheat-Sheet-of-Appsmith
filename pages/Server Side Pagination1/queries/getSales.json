@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Server Side Pagination GSheet",
+    "pageId": "Server Side Pagination1",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -105,10 +105,16 @@
             "limit": "{{Table1.pageSize}}"
           }
         },
+        "projection": {
+          "data": []
+        },
         "queryFormat": {
           "data": "ROWS",
           "viewType": "component",
           "componentData": "ROWS"
+        },
+        "range": {
+          "data": ""
         },
         "rowIndex": {
           "data": "0",
@@ -129,6 +135,14 @@
           "data": true,
           "viewType": "component",
           "componentData": true
+        },
+        "sortBy": {
+          "data": [
+            {
+              "column": "",
+              "order": "Ascending"
+            }
+          ]
         },
         "tableHeaderIndex": {
           "data": "1",
@@ -161,14 +175,7 @@
       }
     },
     "executeOnLoad": true,
-    "dynamicBindingPathList": [
-      {
-        "key": "formData.pagination.data.offset"
-      },
-      {
-        "key": "formData.pagination.data.limit"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
@@ -181,7 +188,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Server Side Pagination GSheet_getSales",
+  "id": "Server Side Pagination1_getSales",
   "deleted": false,
   "gitSyncId": "62bf32d5612750023eb04eae_62c516bf8d0a3236bf3a0cd4"
 }
