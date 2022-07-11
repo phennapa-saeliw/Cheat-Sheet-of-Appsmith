@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "utils",
+    "pageId": "Custom Filter of Table",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\n\tfilterSkills: (data = getSkills.data) => {\n\t\tlet skills = data;\n\t\tif((Select1.selectedOptionLabel !== 'All')&& (Select1.selectedOptionLabel !== '')){\n\t\t\tconsole.log('มีเลือก Select1')\n\t\t\t//skills = skills.filter(s => s.name === Select1.selectedOptionLabel)\n\t\t\tskills = getFilterSkillsSelect.data\n\t\t}else if(Input1.text !== ''){\n\t\t\tconsole.log('มีพิมพ์ใน Input1')\n\t\t\tskills = getFilterSkills.data\n\t\t\t\n\t\t}\n\t\treturn skills;\n\t}\n}",
+    "variables": []
+  },
+  "id": "Custom Filter of Table_utils",
+  "deleted": false,
+  "gitSyncId": "62bf32d5612750023eb04eae_62cc596801213a676a35cb55"
+}

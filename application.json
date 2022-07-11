@@ -25,6 +25,10 @@
       "isDefault": false
     },
     {
+      "id": "Custom Filter of Table",
+      "isDefault": false
+    },
+    {
       "id": "Test",
       "isDefault": false
     }
