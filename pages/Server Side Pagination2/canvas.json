@@ -142,12 +142,16 @@
                 "updated_at",
                 "updated_by"
               ],
-              "dynamicPropertyPathList": [],
+              "dynamicPropertyPathList": [
+                {
+                  "key": "onPageChange"
+                }
+              ],
               "displayName": "Table",
               "searchTags": [
                 "datagrid"
               ],
-              "bottomRow": 47,
+              "bottomRow": 39,
               "parentRowSpace": 10,
               "defaultSelectedRow": "0",
               "hideCard": false,
@@ -376,7 +380,7 @@
               ],
               "shouldTruncate": false,
               "truncateButtonColor": "#FFC13D",
-              "text": "ขั้นตอน\n1. ให้แก้ไข Properties ของ Table โดย enable Server side pagination และใส่ค่า Total records โดยใช้การ get API ก็ได้\n2. ให้เพิ่ม event ของ Table ตรง onPageChange ให้เรียก API ตัวเดียวกันกับที่ดึงข้อมูลมาใส่ในตาราง",
+              "text": "ขั้นตอน\n1. ให้แก้ไข Properties ของ Table โดย enable Server side pagination และใส่ค่า Total records Count โดยใช้การ get API\n2. ให้เพิ่ม event ของ Table ตรง onPageChange ให้เรียก API ตัวเดียวกันกับที่ดึงข้อมูลมาใส่ในตาราง",
               "key": "rens1mgk0e",
               "isDeprecated": false,
               "rightColumn": 63,

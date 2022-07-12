@@ -39,7 +39,7 @@
       "queryParameters": [
         {
           "key": "name",
-          "value": "eq.{{Input1.text}}"
+          "value": "ilike.{{Input1.text}}"
         },
         {
           "key": "select",

@@ -103,7 +103,7 @@
               "isVisible": true,
               "enableClientSideSearch": true,
               "version": 3,
-              "totalRecordsCount": "{{getAllSkills.data.length}}",
+              "totalRecordsCount": "{{utils.getTotal(getAllSkills.data.length)}}",
               "isLoading": false,
               "childStylesheet": {
                 "button": {
