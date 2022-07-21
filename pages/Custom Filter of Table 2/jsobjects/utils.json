@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "utils",
+    "pageId": "Custom Filter of Table 2",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\n\tfilterSkills: (data = getSkills.data, name = 'All') => {\n\t\tlet skills = data;\n\t\tlet skillName = name;\n\t\tif((skillName !== 'All')&& (skillName !== '')){\n\t\t\tconsole.log('มีเลือก Select1')\n\t\t\tskills = getFilterSkillsSelect.data\n\t\t\tappsmith.store.skillName = 'All'\n\t\t}\n\t\treturn skills;\n\t},\n\tgetTotal:(data = getAllSkills.data.length)=>{\n\t\tlet total = data;\n\t\tif((Select1.selectedOptionLabel !== 'All')&& (Select1.selectedOptionLabel !== '')){\n\t\t\ttotal = getFilterSkillsSelect.data.length\n\t\t}\n\t\treturn total;\n\t},\n\tsearchSkill:()=>{\n\t\tgetFilterSkillsSelect.run();\n\t\tshowAlert('เลือก Select1 = '+ Select1.selectedOptionLabel)\n\t\tstoreValue('skillName',Select1.selectedOptionLabel)\n\t}\n}",
+    "variables": []
+  },
+  "id": "Custom Filter of Table 2_utils",
+  "deleted": false,
+  "gitSyncId": "62bf32d5612750023eb04eae_62d04290279768242a29e48f"
+}

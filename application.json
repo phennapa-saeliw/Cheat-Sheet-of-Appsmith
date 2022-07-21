@@ -29,6 +29,14 @@
       "isDefault": false
     },
     {
+      "id": "Custom Filter of Table 2",
+      "isDefault": false
+    },
+    {
+      "id": "JSObject Examples",
+      "isDefault": false
+    },
+    {
       "id": "Test",
       "isDefault": false
     }

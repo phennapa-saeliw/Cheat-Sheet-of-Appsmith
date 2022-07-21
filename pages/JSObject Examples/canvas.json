@@ -1,0 +1,225 @@
+{
+  "unpublishedPage": {
+    "name": "JSObject Examples",
+    "slug": "jsobject-examples",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 920,
+          "containerStyle": "none",
+          "snapRows": 77,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 59,
+          "minHeight": 780,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "boxShadow": "none",
+              "widgetName": "Button1",
+              "onClick": "{{navigateTo('Home')}}",
+              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "displayName": "Button",
+              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+              "searchTags": [
+                "click",
+                "submit"
+              ],
+              "topRow": 1,
+              "bottomRow": 7,
+              "parentRowSpace": 10,
+              "type": "BUTTON_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 16.3125,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 55,
+              "dynamicBindingPathList": [
+                {
+                  "key": "buttonColor"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "text": "Go To Home",
+              "isDisabled": false,
+              "key": "3gx9d2123z",
+              "isDeprecated": false,
+              "rightColumn": 64,
+              "isDefaultClickDisabled": true,
+              "iconName": "home",
+              "widgetId": "ylmha1dz2u",
+              "isVisible": true,
+              "recaptchaType": "V3",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "buttonVariant": "PRIMARY",
+              "iconAlign": "left",
+              "placement": "CENTER"
+            },
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "widgetName": "Container1",
+              "borderColor": "transparent",
+              "isCanvas": true,
+              "displayName": "Container",
+              "iconSVG": "/static/media/icon.1977dca3370505e2db3a8e44cfd54907.svg",
+              "searchTags": [
+                "div",
+                "parent",
+                "group"
+              ],
+              "topRow": 13,
+              "bottomRow": 90,
+              "parentRowSpace": 10,
+              "type": "CONTAINER_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 16.3125,
+              "leftColumn": 1,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                }
+              ],
+              "children": [
+                {
+                  "boxShadow": "none",
+                  "widgetName": "Canvas1",
+                  "displayName": "Canvas",
+                  "topRow": 0,
+                  "bottomRow": 730,
+                  "parentRowSpace": 1,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": false,
+                  "hideCard": true,
+                  "minHeight": 400,
+                  "parentColumnSpace": 1,
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [
+                    {
+                      "key": "borderRadius"
+                    },
+                    {
+                      "key": "accentColor"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+                      "widgetName": "RichTextEditor1",
+                      "displayName": "Rich Text Editor",
+                      "iconSVG": "/static/media/icon.b35e139c93907b5eab3c68c1db842330.svg",
+                      "labelText": "",
+                      "searchTags": [
+                        "input",
+                        "rte"
+                      ],
+                      "topRow": 3,
+                      "bottomRow": 71,
+                      "parentRowSpace": 10,
+                      "labelWidth": 5,
+                      "type": "RICH_TEXT_EDITOR_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 15.7451171875,
+                      "dynamicTriggerPathList": [],
+                      "isToolbarHidden": true,
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "boxShadow"
+                        }
+                      ],
+                      "labelPosition": "Left",
+                      "inputType": "markdown",
+                      "isDisabled": true,
+                      "key": "38hribsrq6",
+                      "isRequired": false,
+                      "isDeprecated": false,
+                      "rightColumn": 64,
+                      "isDefaultClickDisabled": true,
+                      "widgetId": "eipyca9o6z",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "c5ishx86ol",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px",
+                      "defaultText": "# การสร้าง JSObject\n\ncreated: July 20, 2022 8:39 PM\n\nการสร้าง JSObject โดย run API ในรูปแบบต่างๆ รวมถึงการใช้ Promises, Async/Await\n\nRef: [https://docs.appsmith.com/core-concepts/writing-code/javascript-promises](https://docs.appsmith.com/core-concepts/writing-code/javascript-promises)\n\n- การเขียนฟังก์ชันเพื่อสั่ง run API ซ้อน API หลายๆ อัน\n\n```jsx\ncallAPIs: () => {\n\t\treturn Api1.run((res)=>{\n\t\t\tApi2.run((res2)=>{\n\t\t\t\tApi3.run((res3)=>{\n\t\t\t\t\tshowAlert(res3.body.txt)\n\t\t\t\t}, ()=>{}, {txt: res2.body.txt+'Foong '})\n\t\t\t}, ()=>{}, {txt: res.body.txt+'name is '})\n\t\t}, ()=>{}, {txt: 'my '})\n\t}\n```\n\nผลลัพท์ที่ได้คือ showAlert('my name is Foong ')\n\nแต่แบบนี้ ถ้าสร้างตัวแปรไว้ในฟังก์ชัน callAPIs ในฟังก์ชัน  run ของ Api3 ก็จะเข้าถึงตัวแปรข้างนอกไม่ได้\n\n- การเขียนฟังก์ชันแบบใช้ Promises จะทำให้โค้ดสั้น กระชับขึ้น และสามารถเข้าถึงตัวแปรภายนอกได้\n\n```jsx\ncallAPIs2: () => {\n\t\tconst sName = 'PS'\n\t\treturn Api1.run({txt: 'my '})\n\t\t.then(res => Api2.run({txt: res.body.txt+'name is '}))\n\t\t.then(res => Api3.run({txt: res.body.txt+'Foong2 '+sName}))\n\t\t.then(res =>showAlert(res.body.txt))\n\t\t.catch(e => showAlert(e.message))\n\t}\n```\n\nผลลัพท์ที่ได้คือ showAlert('my name is Foong2 PS')\n\n- การเขียนฟังก์ชันแบบใช้ Async/Await เป็นการเขียนให้รอฟังก์ชันที่ใช้ await ทำงานให้เสร็จก่อนจึงจะทำบรรทัดต่อมา\n\n```jsx\ncallAPIs3: async () => {\n\t\tconst sName = 'PS'\n\t\tlet res = await Api1.run({txt: 'my '})\n\t\tres = await Api2.run({txt: res.body.txt+'name is '})\n\t\tres = await Api3.run({txt: res.body.txt+'Foong3 '+sName})\n\t\tshowAlert(res.body.txt)\n\t}\n```\n\nผลลัพท์ที่ได้คือ showAlert('my name is Foong3 PS')"
+                    }
+                  ],
+                  "key": "5vm0ly1bby",
+                  "isDeprecated": false,
+                  "rightColumn": 391.5,
+                  "detachFromLayout": true,
+                  "widgetId": "c5ishx86ol",
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "containerStyle": "none",
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "d0guwkzu1r",
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                }
+              ],
+              "borderWidth": "0",
+              "key": "w04ehu8qoi",
+              "backgroundColor": "#FFFFFF",
+              "isDeprecated": false,
+              "rightColumn": 64,
+              "widgetId": "d0guwkzu1r",
+              "containerStyle": "card",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+            }
+          ]
+        },
+        "layoutOnLoadActions": [],
+        "validOnPageLoadActions": true,
+        "id": "JSObject Examples",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": true
+  },
+  "deleted": false,
+  "gitSyncId": "62bf32d5612750023eb04eae_62d777e0b06ce90d91dbed7f"
+}

@@ -16,22 +16,11 @@
     "pageId": "Custom Filter of Table",
     "collectionId": "Custom Filter of Table_utils",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 0,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "(data = getSkills.data) => {\n  let skills = data;\n  if (Select1.selectedOptionLabel !== 'All' && Select1.selectedOptionLabel !== '') {\n    console.log('มีเลือก Select1');\n    skills = getFilterSkillsSelect.data;\n  } else if (Input1.text !== '') {\n    console.log('มีพิมพ์ใน Input1');\n    skills = getFilterSkills.data;\n  }\n  return skills;\n}",
-      "jsArguments": [
-        {
-          "name": "data"
-        },
-        {
-          "name": "",
-          "value": ""
-        },
-        {
-          "name": "getSkills.data"
-        }
-      ],
+      "jsArguments": [],
       "isAsync": false
     },
     "executeOnLoad": false,
@@ -53,5 +42,5 @@
   },
   "id": "Custom Filter of Table_utils.filterSkills",
   "deleted": false,
-  "gitSyncId": "62bf32d5612750023eb04eae_62cc597001213a676a35cb5d"
+  "gitSyncId": "62bf32d5612750023eb04eae_62d787b5b06ce90d91dbf3d9"
 }

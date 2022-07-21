@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject",
+    "pageId": "JSObject Examples",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\t\n\tcallAPIs: () => {\n\t\treturn Api1.run((res)=>{\n\t\t\tApi2.run((res2)=>{\n\t\t\t\tApi3.run((res3)=>{\n\t\t\t\t\tshowAlert(res3.body.txt)\n\t\t\t\t}, ()=>{}, {txt: res2.body.txt+'Foong '})\n\t\t\t}, ()=>{}, {txt: res.body.txt+'name is '})\n\t\t}, ()=>{}, {txt: 'my '})\n\t},\n\tcallAPIs2: () => {\n\t\tconst sName = 'PS'\n\t\treturn Api1.run({txt: 'my '})\n\t\t.then(res => Api2.run({txt: res.body.txt+'name is '}))\n\t\t.then(res => Api3.run({txt: res.body.txt+'Foong2 '+sName}))\n\t\t.then(res =>showAlert(res.body.txt))\n\t\t.catch(e => showAlert(e.message))\n\t},\n\tcallAPIs3: async () => {\n\t\tconst sName = 'PS'\n\t\tlet res = await Api1.run({txt: 'my '})\n\t\tres = await Api2.run({txt: res.body.txt+'name is '})\n\t\tres = await Api3.run({txt: res.body.txt+'Foong3 '+sName})\n\t\tshowAlert(res.body.txt)\n\t},\n}",
+    "variables": []
+  },
+  "id": "JSObject Examples_JSObject",
+  "deleted": false,
+  "gitSyncId": "62bf32d5612750023eb04eae_62d77712b06ce90d91dbed43"
+}
